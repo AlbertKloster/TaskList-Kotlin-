@@ -1,7 +1,12 @@
 package tasklist
 
 enum class Actions(val string: String) {
-    ADD("add"), PRINT("print"), END("end");
+    ADD("add"),
+    PRINT("print"),
+    EDIT("edit"),
+    DELETE("delete"),
+    END("end"),
+    ;
 
     companion object {
         fun getAction(input: String): Actions {

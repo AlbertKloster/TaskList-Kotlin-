@@ -3,4 +3,4 @@ package tasklist
 import java.time.LocalDateTime
 
 
-data class Task(val priority: Priorities, val deadline: LocalDateTime, val subTasks: MutableList<String>)
+data class Task(var priority: Priorities, var deadline: LocalDateTime, var subTasks: MutableList<String>)
